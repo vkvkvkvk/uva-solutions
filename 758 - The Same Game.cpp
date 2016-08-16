@@ -40,7 +40,7 @@ void shift_row()
     }
     return;
 }
-bool is_empty(int j)
+bool is_empty1(int j)
 {
     int i;
     bool flag=true;
@@ -54,7 +54,7 @@ bool is_empty(int j)
 int empty_num(int j)
 {
     int sum=0;
-    while(is_empty(j) &&j<15)
+    while(is_empty1(j) &&j<15)
     {
         sum++;
         j++;
